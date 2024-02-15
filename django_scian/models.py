@@ -12,7 +12,7 @@ class SCIAN(TreeNodeModel):
 
     treenode_display_field = "titulo"
     nivel = models.CharField(max_length=16, choices=(('sector', 'Sector'), ('subsector', 'Subsector'), ('rama', 'Rama'), ('subrama', 'Subrama'), ('clase', 'Clase')))
-    titulo = models.CharField(max_length=50)
+    titulo = models.CharField(max_length=200)
     descripcion = models.TextField(blank=True,)
     incluye = models.TextField(blank=True, null=True)
     excluye = models.TextField(blank=True, null=True)

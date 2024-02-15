@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('tn_siblings_pks', models.TextField(blank=True, default='', editable=False, verbose_name='Siblings pks')),
                 ('tn_siblings_count', models.PositiveIntegerField(default=0, editable=False, verbose_name='Siblings count')),
                 ('nivel', models.CharField(choices=[('sector', 'Sector'), ('subsector', 'Subsector'), ('rama', 'Rama'), ('subrama', 'Subrama'), ('clase', 'Clase')], max_length=16)),
-                ('titulo', models.CharField(max_length=50)),
+                ('titulo', models.CharField(max_length=200)),
                 ('descripcion', models.TextField(blank=True)),
                 ('incluye', models.TextField(blank=True, null=True)),
                 ('excluye', models.TextField(blank=True, null=True)),
