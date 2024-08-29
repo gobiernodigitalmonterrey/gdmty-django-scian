@@ -1,5 +1,5 @@
 from django.test import TestCase
-from django_scian.models import SCIAN
+from cat_scian.models import SCIAN
 
 class SCIANTest(TestCase):
     fixtures = ["fixtures/SCIANFixture.json"]

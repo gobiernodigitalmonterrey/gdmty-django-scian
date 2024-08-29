@@ -1,8 +1,8 @@
 ============
-django-scian
+cat_scian
 ============
 
-django-scian is a Django app to get a SCIAN Catalog.
+gdmty-django-scian is a Django app to get a SCIAN Catalog.
 
 
 Quick start
@@ -12,15 +12,15 @@ Quick start
 
     INSTALLED_APPS = [
         ...,
-        "django_scian.apps.ScianConfig",
+        "cat_scian.apps.ScianConfig",
     ]
 
 2. Include the polls URLconf in your project urls.py like this::
 
-    path("scian/", include("django_scian.urls")),
+    path("cat_scian/", include("cat_scian.urls")),
 
 3. Run ``python manage.py migrate`` to create the models.
 
 4. Start the development server and visit the admin to see the tree.
 
-5. Visit the ``/scian/`` URL to participate in the poll.
+5. Visit the ``/cat_scian/`` URL to participate in the poll.

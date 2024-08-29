@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     def poblateSCIAN(apps, schema_editor):
         from django.core.management import call_command
-        call_command('loaddata', '../fixtures/scian.json')
+        call_command('loaddata', '../fixtures/cat_scian.json')
 
     dependencies = [
     ]
@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 ('incluye', models.TextField(blank=True, null=True)),
                 ('excluye', models.TextField(blank=True, null=True)),
                 ('indice', models.TextField(blank=True, null=True)),
-                ('tn_parent', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='tn_children', to='scian.scian', verbose_name='Parent')),
+                ('tn_parent', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='tn_children', to='cat_scian.cat_scian', verbose_name='Parent')),
             ],
             options={
                 'verbose_name': 'Taxón',

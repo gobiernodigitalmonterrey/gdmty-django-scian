@@ -5,7 +5,7 @@ El Sistema de Clasificación Industrial de América del Norte (SCIAN) es un sist
 ## Instalación
 
 ```
-pip install git+https://github.com/SIGAMty/django-scian@main
+pip install git+https://github.com/gobiernodigitalmonterrey/gdmty-django-scian@main
 ```
 
 ## Descripción
