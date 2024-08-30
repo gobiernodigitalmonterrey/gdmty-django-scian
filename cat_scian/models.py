@@ -1,6 +1,7 @@
 from django.db import models
 from treenode.models import TreeNodeModel
 
+
 class SCIAN(TreeNodeModel):
     """
     El Sistema de Clasificación Industrial de América del Norte (SCIAN) 
