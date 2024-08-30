@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
-class GDMTYCatScianConfig(AppConfig):
+
+class CatScianConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'gdmty_django_scian'
+    name = 'cat_scian'
