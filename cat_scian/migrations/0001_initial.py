@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 ('incluye', models.TextField(blank=True, null=True)),
                 ('excluye', models.TextField(blank=True, null=True)),
                 ('indice', models.TextField(blank=True, null=True)),
-                ('tn_parent', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='tn_children', to='cat_scian.cat_scian', verbose_name='Parent')),
+                ('tn_parent', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='tn_children', to='cat_scian.SCIAN', verbose_name='Parent')),
             ],
             options={
                 'verbose_name': 'Taxón',
